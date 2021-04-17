@@ -25,6 +25,8 @@ nav ul li a:hover{
     cursor: pointer;
     color: rgb(58, 143, 158);
     border-bottom: 2px solid black;
+    font-size: 20px;
+    transition: linear 1s 0s ;
 }
 h1{
     text-align: center;
