@@ -15,6 +15,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav ul li a{
     text-decoration:none;
@@ -22,12 +23,12 @@ nav ul li a{
 }
 nav ul li a:hover{
     cursor: pointer;
-    color: black;
+    color: rgb(58, 143, 158);
     border-bottom: 2px solid black;
 }
 h1{
     text-align: center;
-    font-size: 44px;
+    font-size: 35px;
     color: white;
 }
 img{
@@ -79,7 +80,41 @@ footer{
     font-size: 20px;
     margin: -20px;
 }
-a{
-    text-decoration: none;
-    color:grey;
+
+#queijo:visited{
+    color: rgb(180, 52, 152)
 }
+#queijo:link{
+    color: gray;
+}
+
+h1{
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes titulo{
+    0%{
+        color: darkorchid;
+        transform: scale(0.2)rotate(0deg);
+    }
+    25%{
+        color: darkturquoise;
+        transform: scale(0.4)rotate(-90deg);
+    }
+    50%{
+        color: greenyellow;
+        transform: scale(0.6)rotate(-180deg);
+    }
+    75%{
+        color: indigo;
+        transform: scale(0.8)rotate(-270deg);
+    }
+    100%{
+        color: white;
+        transform: rotate(-360deg);
+    }
+} 
